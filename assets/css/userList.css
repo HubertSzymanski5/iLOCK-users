@@ -1,3 +1,4 @@
+/* main properties */
 body {
     margin: 0;
     background-color:rgb(0,174,239);
@@ -9,6 +10,7 @@ body {
     color: #0e76bc;
 }
 
+/* modify the container */
 #container {
     background-color: whitesmoke;
     width: 50%;
@@ -19,36 +21,42 @@ body {
     box-shadow: 0 0 7px black;
 }
 
+/* container header - the only one h1 -> "iLOCK Users" */
 h1 {
     margin: 0;
     text-align: center;
     padding: 10px 5px;
 }
 
+/* remove all bullets from all lists */
 ul {
     list-style: none;
 }
 
+/* ul with usernames */
 #user-list {
     padding: 0;
     margin: 0;
 }
 
+/* li of user class -> each element */
 .user {
     padding: 10px 10px;
     background-color: #fff;
 }
 
+/* modify 2n+1 for better visualization */
 .user:nth-of-type(2n+1) {
-    background-color: rgba(0,174,239,.5);
     background-color: #0e76bc;
     color: #fff;
 }
 
+/* username bolding on hover */
 .user:hover {
     font-weight: bold;
 }
 
+/* ul of user-info class display settings */
 .user-info{
     font-size: 1.0rem;
     display: none;
@@ -57,7 +65,17 @@ ul {
     margin: 5px;
 }
 
+/* taking care of font awesome icons -> adding space and centering */
 .fas {
     text-align: center;
     width: 30px;
+}
+
+/* modify error message :( */
+.error {
+    background-color: #0e76bc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
 }
